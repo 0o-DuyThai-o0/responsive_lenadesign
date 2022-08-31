@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">  
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="./js/jquery.slim.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/responsive.css">
+
+        <style type="text/css">
+          #goTop { 
+            bottom: 50px; 
+            cursor: pointer; 
+            display: none; 
+            border-radius: 50%;
+            box-shadow: 0px 2px 2px 1px rgb(208, 208, 208);
+            font-size: 10px;
+            position: fixed; 
+            right: 10px;
+            z-index: 1000;
+            padding: 10px;
+            background-color: aquamarine;
+          }
+        </style>
+</head>
+<body>
+
+    <!-- -----------------------------menu--------------------------------------- -->
+    <div id="menu">  
+        <div class="container dong1">
+          <div class="row dong_menu">
+            <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="logo">
+                  <a class="navbar-brand" href="#">
+                      <img src="./img/logo.png" alt="">
+                  </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa-solid fa-bars"></i> 
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto ul_cha">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">VỀ CHÚNG TÔI<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        NỘI THẤT
+                      </a>
+                      <ul class="dropdown-menu menu_con" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế nội thất chung cư cao cấp</a>
+                        </li>
+                        
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất nail,spa</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất showroom</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất văn phòng</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất bar, cafe</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất biệt thự</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất khách sạn</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công Resort</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất nhầ hàng</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất nhà ở</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế thi công nội thất triển lãm</a>
+                        </li> 
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        KIẾN TRÚC
+                      </a>
+                      <ul class="dropdown-menu menu_con" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết kế kiến trúc</a>
+                        </li>
+                        
+                        <li>
+                          <a class="dropdown-item" href="#">Thiết Thức</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TIN TỨC-BLOG</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+  
+            <div class="col-md-1 col-lg-1">
+              <div class="nut_search">
+                <ul class="navbar-nav menu_phu1">
+                  <li class="nav-item dropdown menu_search">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <ul class="menu_phu2" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item new_dropdown_item" href="#">
+                            <form class="form-inline form_menu_phu_2">
+                                <input class="form-control" type="search" placeholder="Từ Khóa..." aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                            </form>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <!-- --------------------------------Slider---------------------------------- -->
+    <div id="banner">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="./img/banner-1.jpg" alt="" width="100%"  height="auto">
+          </div>
+          <div class="swiper-slide">
+              <img src="./img/banner-2.jpg" alt="" width="100%"  height="auto">
+          </div>
+          <div class="swiper-slide">
+              <img src="./img/banner-3.jpg" alt="" width="100%"  height="auto">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script src="./js/swiper-bundle.min.js"></script>
+      <Script src="./js/index.js"></Script>
+    </div>
+
+    <!-- --------------dịch vụ---------------- -->
+    <div class="dichvu">
+      <h1>DỊCH VỤ</h1>
+    </div>
+
+    <!-- --------------cach thiết kế--------------- -->
+    <div class="cach_thiet_ke">
+      <div class="container">
+        <div class="row the_ctk">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="the_tk_1">
+              <h3>THIẾT KẾ THI CÔNG NỘI THẤT</h3>
+
+            <div class="vd_tk_nt">
+              <div class="img_tk">
+                <img src="./img/vd_tk1.png" alt="">
+              </div>
+
+              <div class="name_tk">
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất văn phòng
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất chung cư
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất nhà ở
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất biệt thự
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất khách sạn
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất Resort
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất nail, spa
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất showroom
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất triển lãm
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất quán cafe
+                  </a>
+                </div>
+
+                <div class="name_tk_a">
+                  <a href="#">
+                    Thiết kế & thi công nội thất nhà hàng
+                  </a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+    
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="the_tk_1">
+              <h3>THIẾT KẾ KIẾN TRÚC</h3>
+
+              <div class="vd_tk_nt">
+                <div class="img_tk">
+                  <img src="./img/vd_tk2.jpg" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="name_tk">
+                  <div class="name_tk_a">
+                    <a href="#">
+                      Thiết kế & thi công nội thất văn phòng
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------gọi ngay---------------- -->
+
+    <div class="goingay">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  row_goingay">
+            <button class="goi">GỌI NGAY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------dịch vụ---------------- -->
+    <div class="dichvu">
+      <h1>SẢN PHẨM TIÊU BIỂU</h1>
+    </div>
+
+    <!-- --------------thiết kế--------------- -->
+    <div id="the_tt_dv">
+      <div class="the_tt_dv">
+          <div class="sp_nt">
+              <h3 class="name_sp_nt">
+                  SẢN PHẨM NỘI THẤT
+              </h3>
+  
+              <div class="chugm">
+                  <div class="main">
+                      <div class="container">
+                        <div class="the_chua">
+                            <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                            <div class="overlay">
+                              <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              
+                  <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="chugm">
+                  <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+              
+                    <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="chugm">
+                  <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+              
+                    <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="vd_xem_them">
+                  <a href="#">XEM THÊM</a>
+                </div>
+          </div>
+  
+          <div class="sp_nt">
+              <h3 class="name_sp_nt">
+                  SẢN PHẨM KIẾN TRÚC
+              </h3>
+  
+              <div class="chugm">
+                  <div class="main">
+                      <div class="container">
+                        <div class="the_chua">
+                            <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                            <div class="overlay">
+                              <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              
+                  <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="chugm">
+                  <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+              
+                    <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="chugm">
+                  <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+              
+                    <div class="main">
+                      <div class="container">
+                          <div class="the_chua">
+                              <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                              <div class="overlay">
+                                <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="vd_xem_them">
+                  <a href="#">XEM THÊM</a>
+                </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- --------------dịch vụ---------------- -->
+    <div class="dichvu">
+      <h1>VÌ SAO CHỌN LENADESIGN</h1>
+    </div>
+
+    <!-- --------------gioi_thieu---------------- -->
+    <div class="gioi_thieu">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="dong11">
+              <div class="dong1_cot1">
+                <div class="dong1_cot1_o1">
+                  3000+
+                </div>
+    
+                <div class="dong1_cot1_o2">
+                  khách hàng,
+                </div>
+              </div>
+    
+              <div class="dong1_cot1">
+                <div class="dong1_cot1_o1">
+                  5000+
+                </div>
+    
+                <div class="dong1_cot1_o2">
+                  dự án đã hoàn thành,
+                </div>
+              </div>
+    
+              <div class="dong1_cot1">
+                <div class="dong1_cot1_o1">
+                  50
+                </div>
+    
+                <div class="dong1_cot1_o2">
+                  nhân tài trong lĩnh vực chuyên môn
+                </div>
+              </div>
+              <div class="dong1_cot1_goi">
+                <button class="goi">LIÊN HỆ NGAY</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="dong1_cot2_o1">
+              1. Chất lượng sản phẩm
+            </div>
+
+            <div class="dong1_cot2_o2">
+              Tập trung vào những sản phẩm mang tính chất đột phá và phù hợp với nhu cầu người dùng
+            </div>
+
+            <div class="dong1_cot2_o1">
+              2. Ý tưởng sáng tạo
+            </div>
+
+            <div class="dong1_cot2_o2">
+              Luôn cập nhật và tạo ra những mẫu thiết kế độc đáo mới mẻ dẫn đầu xu hướng
+            </div>
+
+            <div class="dong1_cot2_o1">
+              3. Đội ngũ chuyên nghiệp
+            </div>
+
+            <div class="dong1_cot2_o2">
+              Sở hữu bộ máy nhân sự chuyên môn cao, dày dạn kinh nghiệm, đón đầu xu hướng trong thị trường khẳng định sự khác biệt đẳng cấp
+            </div>
+
+            <div class="dong1_cot2_o1">
+              4. Uy tín hàng đầu
+            </div>
+
+            <div class="dong1_cot2_o2">
+              Thương hiệu trẻ khẳng định dấu ấn, tâm huyết trong từng sản phẩm
+            </div>
+
+            <div class="dong1_cot2_o1">
+              5. Đảm bảo sự hài lòng của khách hàng 
+            </div>
+
+            <div class="dong1_cot2_o2">
+              Sự hài lòng là động lực phát triển cho LNDesign
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------khach_hang---------------- -->
+    <div class="khach_hang">
+      <div class="khach_hang_chinh">
+        <div class="tong_kh">
+          <img src="./img/tong_kh.png" alt="" width="60%" height="auto">
+        </div>
+
+        <div class="name_tongkh">
+          KHÁCH HÀNG ĐÃ TIN TƯỞNG LENADESIGN
+        </div>
+
+        <div class="container">
+          <div class="row"> 
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh1.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh2.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh3.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh4.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh5.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh6.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh7.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh8.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh9.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh10.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh11.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh12.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh13.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh14.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh15.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh16.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh17.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh18.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh19.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh20.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh21.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh22.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh23.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+              <div class="tenkh">
+                <img src="./img/kh24.png" alt="" width="100%" height="auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------dịch vụ---------------- -->
+    <div class="dichvu">
+      <h1>TIN NỔI BẬT</h1>
+    </div>
+
+    <!-- --------------Tin nổi bật---------------- -->
+    <div id="the_tt_dv">
+      <div class="the_tt_dv">
+          <div class="dong_tnb">
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+
+              <div class="main2">
+                  <div class="container">
+                    <div class="the_chua">
+                        <img src="./img/thietke_img.jpg" alt="Avatar" class="image" width="100%" height="auto">
+                        <div class="overlay">
+                          <div class="text">Thiết kế nội thất phòng ngủ đẹp và thanh lịch sang trọng 65m2 tại Hà Nội</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="name_tdb">
+                      Thiết Kế Nội Thất Căn Hộ Skyline Sang Trọng, Hiện Đại
+                    </a>
+      
+                    <div class="tittle_tdb">
+                      Thiết kế nội thất căn hộ Skyline đòi hỏi những yêu cầu khắt khe ở các KTS nhà LNDesign và hứa hẹn đây sẽ là một nơi sống rất đáng mơ ước.  Thanh lịch và hiện đại là hai từ để diễn tả căn hộ này. Đồ [...]
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- ---------------------thông tin liên hệ------------------- -->
+    <div class="lienhe_tt">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="tittle_lh">
+              LET’S TALK
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="form_lh">
+              <form action="">
+                <input type="text" placeholder="Điện thoại của bạn">
+                <button>ĐĂNG KÝ NHẬN TƯ VẤN</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------lenadesign------------------- -->
+    <div class="lenadesign">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="thong_tin">
+              <div class="name_tt">
+                <div class="name_tt1">
+                  LENADESIGN
+                </div>
+
+                <div class="name_tt2">
+                  0912.68.33.68
+                </div>
+              </div>
+
+              <div class="name_dc">
+                Hà Nội
+              </div>
+
+              <div class="dc_1">
+                <div class="icon_dc1">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="dci_tt">
+                  Tòa Hồ Gươm Plaza, 102 Trần Phú, Hà Đông
+                </div>
+              </div>
+
+              <div class="sdt_tt">
+                <div class="icon_dc1">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="sdt_lh1">
+                  <a href="tel: 0912.68.33.68"> 0912.68.33.68</a>
+                </div>
+
+                <div class="sdtlh2">
+                  – 0247.304.3368
+                </div>
+              </div>
+
+              <div class="gmail_tt">
+                <div class="icon_dc1">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+
+                <div class="gmail_lh1">
+                  <a href="mailto:contact@lndesign.com.vn">contact@lndesign.com.vn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="o_chu">
+              <img src="./img/o_chu.png" alt="" width="100%" height="auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------footer------------------------------------ -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer1">
+              <div class="footer_icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+
+              <div class="footer_name">
+                Quảng cáo/ Thương hiệu – LNDesign
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2">
+            <div class="footer1">
+              <div class="footer_icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+
+              <div class="footer_name">
+                Nội Thất – LNDesign
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2">
+            <div class="footer1">
+              <div class="footer_icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div class="footer_name">
+                ceo@lndesign.com.vn
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+            <div class="footer1">
+              <div class="footer_name">
+                © Copyright 2019 by LNDesign Joint Stock Company. All rights reserved.
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="goTop"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="./js/jquery.min(jq_1.7.2).js" type="text/javascript"></script> 
+    <script type="text/javascript"> $(function(){ $(window).scroll(function () { if ($(this).scrollTop() > 100) $('#goTop').fadeIn(); else $('#goTop').fadeOut(); }); $('#goTop').click(function () { $('body,html').animate({scrollTop: 0}, 'slow'); }); }); </script>
+
+
+</body>
+</html>
